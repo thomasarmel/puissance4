@@ -16,6 +16,6 @@ Pour régler la profondeur (et donc "l'intelligence") du bot min-max, ajouter l'
 
 Pour changer la taille du plateau, ajouter l'option **-DTAILLE_JEU=[taille]** au compilateur (défaut: 7)
 
-**ATTENTION:** Si vous compiler avec gcc, pensez à ajouter l'option **-lm** au compilateur, puisque le programme utilise math.h.
+**ATTENTION:** Si vous compilez avec gcc, pensez à ajouter l'option **-lm** au compilateur, puisque le programme utilise math.h.
 
 De plus, à partir d'une certaine profondeur de bot min-max, il n'est plus possible de compiler pour une architecture 32 bits. En effet le bot utilise des nombres entiers pour évaluer ses actions possibles. Ces nombres peuvent atteindre une valeur assez conséquente si la profondeur est élevée et par conséquent ne plus être stockables sur 32 bits.
