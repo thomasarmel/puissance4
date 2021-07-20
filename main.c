@@ -4,7 +4,7 @@
 ATTENTION !!!
 Utilise la bibliotheque math.h
 Sous gcc compiler avec -lm
-Pour rendre le joueur autonome plus ou moins "intelligent", utiliser l'ooption -DPROFONDEUR_MIN_MAX=[profondeur]
+Pour rendre le joueur autonome plus ou moins "intelligent", utiliser l'option -DPROFONDEUR_MIN_MAX=[profondeur]
 Pour modifier la taille du jeu: -DTAILLE_JEU=[taille] (7 par defaut)
 */
 
@@ -36,7 +36,7 @@ int main()
                 lire_str(nom_fichier, 100);
             }
             fichier_sauvegarde=fopen(nom_fichier, "r");
-        } while(!fichier_sauvegarde); // Tant qu'on n'arrive pas à ouvrir le fichier
+        } while(!fichier_sauvegarde); // Tant qu'on n'arrive pas Ã  ouvrir le fichier
     }
     partie(choix_bot, fichier_sauvegarde); // On lance la partie
     return 0;
